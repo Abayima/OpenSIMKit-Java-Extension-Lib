@@ -14,4 +14,7 @@ import net.xeoh.plugins.base.Plugin;
 public interface ExtensionInterface extends Plugin {
     public boolean preSave(ArrayList<String> messages);
     public boolean postSave(ArrayList<String> messages);
+    public String getExtensionName();
+    public ArrayList<ExtensionParameter> getParameters();
+    public boolean setParameters(ArrayList<ExtensionParameter> parameters);
 }
